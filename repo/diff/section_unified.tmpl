@@ -1,0 +1,34 @@
+{{$file := .file}}
+{{$highlightClass := $file.GetHighlightClass}}
+{{range $j, $section := $file.Sections}}
+	{{range $k, $line := $section.Lines}}
+		<tr class="{{DiffLineTypeToStr .GetType}}-code nl-{{$k}} ol-{{$k}}">
+			{{if eq .GetType 4}}
+			<td colspan="2" class="lines-num">
+				{{/* {{if gt $j 0}}<span class="fold octicon octicon-fold"></span>{{end}} */}}
+			</td>
+			{{else}}
+			<td class="lines-num lines-num-old" data-line-num="{{if $line.LeftIdx}}{{$line.LeftIdx}}{{end}}"><span rel="{{if $line.LeftIdx}}diff-{{Sha1 $file.Name}}L{{$line.LeftIdx}}{{end}}"></span></td>
+			<td class="lines-num lines-num-new" data-line-num="{{if $line.RightIdx}}{{$line.RightIdx}}{{end}}"><span rel="{{if $line.RightIdx}}diff-{{Sha1 $file.Name}}R{{$line.RightIdx}}{{end}}"></span></td>
+			{{end}}
+			<td class="lines-type-marker"><span class="mono" data-type-marker="{{$line.GetLineTypeMarker}}"></span></td>
+			<td class="lines-code{{if (not $line.RightIdx)}} lines-code-old{{end}}">{{if and $.root.SignedUserID $line.CanComment $.root.PageIsPullFiles}}<a class="ui green button add-code-comment add-code-comment-{{if $line.RightIdx}}right{{else}}left{{end}}" data-path="{{$file.Name}}" data-side="{{if $line.RightIdx}}right{{else}}left{{end}}" data-idx="{{if $line.RightIdx}}{{$line.RightIdx}}{{else}}{{$line.LeftIdx}}{{end}}">+</a>{{end}}<span class="mono wrap{{if $highlightClass}} language-{{$highlightClass}}{{else}} nohighlight{{end}}">{{$section.GetComputedInlineDiffFor $line}}</span></td>
+		</tr>
+		{{if gt (len $line.Comments) 0}}
+		<tr>
+			<td colspan="2" class="lines-num"></td>
+			<td class="lines-type-marker"></td>
+			<td class="add-comment-left add-comment-right">
+				<div class="field comment-code-cloud">
+					<div class="comment-list">
+						<ui class="ui comments">
+						{{ template "repo/diff/comments" dict "root" $.root "comments" $line.Comments}}
+						</ui>
+					</div>
+					{{template "repo/diff/comment_form_datahandler" dict "hidden" true "reply" (index $line.Comments 0).ReviewID "root" $.root "comment" (index $line.Comments 0)}}
+				</div>
+			</td>
+		</tr>
+		{{end}}
+	{{end}}
+{{end}}

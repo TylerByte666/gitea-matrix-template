@@ -1,0 +1,47 @@
+{{template "base/head" .}}
+<div class="organization teams">
+	{{template "org/header" .}}
+	<div class="ui container">
+		{{template "base/alert" .}}
+		<div class="ui grid">
+			{{template "org/team/sidebar" .}}
+			<div class="ui ten wide column">
+				{{template "org/team/navbar" .}}
+				{{$canAddRemove := and $.IsOrganizationOwner (not (eq $.Team.LowerName "owners"))}}
+				{{if $canAddRemove}}
+					<div class="ui attached segment">
+						<form class="ui form" id="add-repo-form" action="{{$.OrgLink}}/teams/{{$.Team.LowerName}}/action/repo/add" method="post">
+							{{.CsrfTokenHtml}}
+							<div class="inline field ui left">
+								<div id="search-repo-box" data-uid="{{.Org.ID}}" class="ui search">
+									<div class="ui input">
+										<input class="prompt" name="repo_name" placeholder="{{.i18n.Tr "org.teams.search_repo_placeholder"}}" autocomplete="off" required>
+									</div>
+								</div>
+							</div>
+							<button class="ui green button">{{.i18n.Tr "org.teams.add_team_repository"}}</button>
+						</form>
+					</div>
+				{{end}}
+				<div class="ui bottom attached table segment repositories">
+					{{range .Team.Repos}}
+						<div class="item">
+							{{if $canAddRemove}}
+								<a class="ui red small button right" href="{{$.OrgLink}}/teams/{{$.Team.LowerName}}/action/repo/remove?repoid={{.ID}}">{{$.i18n.Tr "org.teams.remove_repo"}}</a>
+							{{end}}
+							<a class="member" href="{{AppSubUrl}}/{{$.Org.Name}}/{{.Name}}">
+								<i class="octicon octicon-{{if .IsPrivate}}lock{{else if .IsFork}}repo-forked{{else if .IsMirror}}repo-clone{{else}}repo{{end}}"></i>
+								<strong>{{$.Org.Name}}/{{.Name}}</strong>
+							</a>
+						</div>
+					{{else}}
+						<div class="item">
+							<span class="text grey italic">{{$.i18n.Tr "org.teams.repos.none"}}</span>
+						</div>
+					{{end}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{template "base/footer" .}}

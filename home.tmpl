@@ -1,13 +1,16 @@
 {{template "base/head" .}}
-<div class="home">
+<div id="home" class="home">
+	<div style="margin:auto; width:100%; position: fixed; padding-top:14px">			
+		<canvas id="c"></canvas>			
+	</div>
 	<div class="ui stackable middle very relaxed page grid">
 		<div class="sixteen wide center aligned centered column">
 			<div>
-				<img class="logo" src="{{AppSubUrl}}/img/gitea-lg.png" />
+				<i class="octicon octicon-flame gitea-matrix-primary-color" style="font-size:180px;"></i>
 			</div>
 			<div class="hero">
 				<h1 class="ui icon header title">
-					{{AppName}}
+					<span class="gitea-matrix-primary-color">{{AppName}}</span>
 				</h1>
 				<h2>{{.i18n.Tr "app_desc"}}</h2>
 			</div>

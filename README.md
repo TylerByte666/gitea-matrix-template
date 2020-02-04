@@ -9,8 +9,8 @@
 
 ## How to use:
 1. Find your gitea custom directory path in ***Site Administration > Configuration > Custom File Root Path***.
-2. Create directorys ***templates*** and ***public/css*** if not exist.
-3. Copy/Move files from this repo in there counterpart locations.
+2. Create directories: ***templates*** and ***public/css*** within the directory, if it does not already exist. But please empty any previous files as they may create a conflict or unexpected behaviour.
+3. Clone then Copy/Move files from this repo into the custom directory location.
 4. Add folowing lines to your gitea config:
 ```ini
 [ui]
@@ -21,5 +21,10 @@ DEFAULT_THEME = matrix
 ### Welcome to the matrix!
 
 ### Special Notes:
- - A user can still change the theme settings. <- Big thanks to 6543!
+ - A user can still change the theme settings. 
+
+### Special Thanks to 6543!
+https://github.com/6543
+
+
  

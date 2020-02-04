@@ -20,4 +20,6 @@ DEFAULT_THEME = matrix
 7. Restart your Gitea Service and you are ready to go.
 ### Welcome to the matrix!
 
-8. A user can still change the theme he likes in his settings avterwards
+### Special Notes:
+ - A user can still change the theme settings. <- Big thanks to 6543!
+ 

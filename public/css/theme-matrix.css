@@ -1,18 +1,57 @@
-.gitea-matrix-active-color{color:#83f20d}
-.gitea-matrix-primary-color{color:#76da0b}
-.gitea-matrix-secondary-color{color:#5AA509}
-
-.ui.secondary.menu .active.item{color:#83f20d !important}
-.ui.secondary.menu .item{color:#5AA509 !important}
-.ui.secondary.menu .active.item:hover,.ui.secondary.menu .dropdown.item:hover,.ui.secondary.menu .link.item:hover,.ui.secondary.menu a.item:hover{color:#83f20d !important}
-
-
-.brand-logo{font-size:35px;}
-body{
-    background-color: black !important;
-    color: #83f20d !important;
+.gitea-matrix-active-color {
+  color: #83f20d
 }
-.following.bar.light{background-color:black;border-bottom:1px solid #83f20d !important;box-shadow:0 2px 3px rgba(0,0,0,.04)}
-footer{background-color:black !important;border-top:1px solid #83f20d !important;width:100%;flex-basis:40px;color:#83f20d}
-.ui.secondary.menu{background-color: black !important;}
-.footer{background:black !important;border-top:1px solid #313131;position:relative;margin-bottom:0px}
+
+.gitea-matrix-primary-color {
+  color: #76da0b
+}
+
+.gitea-matrix-secondary-color {
+  color: #5AA509
+}
+
+.ui.secondary.menu .active.item {
+  color: #83f20d !important
+}
+
+.ui.secondary.menu .item {
+  color: #5AA509 !important
+}
+
+.ui.secondary.menu .active.item:hover, .ui.secondary.menu .dropdown.item:hover, .ui.secondary.menu .link.item:hover, .ui.secondary.menu a.item:hover {
+  color: #83f20d !important
+}
+
+.brand-logo {
+  font-size: 35px;
+}
+
+body {
+  background-color: black !important;
+  color: #83f20d !important;
+}
+
+.following.bar.light {
+  background-color: black;
+  border-bottom: 1px solid #83f20d !important;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .04)
+}
+
+footer {
+  background-color: black !important;
+  border-top: 1px solid #83f20d !important;
+  width: 100%;
+  flex-basis: 40px;
+  color: #83f20d
+}
+
+.ui.secondary.menu {
+  background-color: black !important;
+}
+
+.footer {
+  background: black !important;
+  border-top: 1px solid #313131;
+  position: relative;
+  margin-bottom: 0px
+}

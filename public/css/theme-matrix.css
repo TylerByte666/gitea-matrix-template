@@ -15,4 +15,4 @@ body{
 .following.bar.light{background-color:black;border-bottom:1px solid #83f20d !important;box-shadow:0 2px 3px rgba(0,0,0,.04)}
 footer{background-color:black !important;border-top:1px solid #83f20d !important;width:100%;flex-basis:40px;color:#83f20d}
 .ui.secondary.menu{background-color: black !important;}
-.footer{background:black !important;border-top:1px solid #313131}
+.footer{background:black !important;border-top:1px solid #313131;position:relative;margin-bottom:0px}

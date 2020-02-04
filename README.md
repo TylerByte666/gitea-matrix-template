@@ -5,7 +5,7 @@
 
 ![preview 2](matrix-preview-2.png "Preview")
 
-## For Gitea Version ***1.10.3***
+## For Gitea Version ***1.11.x***
 
 ## How to use:
 1. Find your gitea custom directory path in ***Site Administration > Configuration > Custom File Root Path***.

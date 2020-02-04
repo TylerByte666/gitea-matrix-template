@@ -17,7 +17,7 @@
 THEMES = gitea,arc-green,matrix
 DEFAULT_THEME = matrix
 ```
-7. Restart your Gitea Service and you are ready to go.
+5. Restart your Gitea Service and you are ready to go.
 ### Welcome to the matrix!
 
 ### Special Notes:

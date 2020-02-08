@@ -1,9 +1,9 @@
 # Gitea Matrix Template - Make your Gitea cooler
 ## Previews:
 
-![preview 1](preview\homepage.png "Preview")
+![preview 1](preview/homepage.png "Preview")
 
-![preview 2](preview\explore.png "Preview")
+![preview 2](preview/explore.png "Preview")
 
 ![preview 3](preview\login.png "Preview")
 

@@ -5,17 +5,17 @@
 
 ![preview 2](preview/explore.png "Preview")
 
-![preview 3](preview\login.png "Preview")
+![preview 3](preview/login.png "Preview")
 
-![preview 4](preview\signedhomepage.png "Preview")
+![preview 4](preview/signedhomepage.png "Preview")
 
-![preview 5](preview\repopage.png "Preview")
+![preview 5](preview/repopage.png "Preview")
 
-![preview 6](preview\markdowneditor.png "Preview")
+![preview 6](preview/markdowneditor.png "Preview")
 
-![preview 7](preview\profilepage.png "Preview")
+![preview 7](preview/profilepage.png "Preview")
 
-![preview 8](preview\settingpage.png "Preview")
+![preview 8](preview/settingpage.png "Preview")
 
 
 

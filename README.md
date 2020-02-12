@@ -1,4 +1,5 @@
-# Gitea Matrix Template - Make your Gitea cooler
+# Gitea Matrix Template- Turn your gitea arc-green template into the matrix
+
 ## Previews:
 
 ![preview 1](preview/homepage.png "Preview")
@@ -18,8 +19,7 @@
 ![preview 8](preview/settingpage.png "Preview")
 
 
-
-## For Gitea Version ***1.11.0-rc2***
+## For Gitea Version ***1.10.3***
 
 ## How to use:
 1. Find your gitea custom directory path in ***Site Administration > Configuration > Custom File Root Path***.

@@ -37,5 +37,6 @@ DEFAULT_THEME = matrix
 ### Special Notes:
  - A user can still change the theme settings.
 
-### Special Thanks to 6543!
+### Special Thanks to 6543 & FanyangMengDev
 https://github.com/6543
+https://github.com/FanyangMengDev

@@ -8,7 +8,7 @@
 
 ![preview 3](preview/repopage1.png "Preview")
 
-![preview 4](preview/markdowneditor.png "Preview")
+![preview 4](preview/markdown.png "Preview")
 
 ![preview 5](preview/profilepage.png "Preview")
 

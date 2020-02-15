@@ -4,21 +4,13 @@
 
 ![preview 1](preview/homepage.png "Preview")
 
-![preview 2](preview/explore.png "Preview")
+![preview 2](preview/signedhomepage.png "Preview")
 
-![preview 3](preview/login.png "Preview")
+![preview 3](preview/repopage1.png "Preview")
 
-![preview 4](preview/signedhomepage.png "Preview")
+![preview 4](preview/markdowneditor.png "Preview")
 
-![preview 5](preview/repopage1.png "Preview")
-
-![preview 6](preview/repopage2.png "Preview")
-
-![preview 7](preview/markdowneditor.png "Preview")
-
-![preview 8](preview/profilepage.png "Preview")
-
-![preview 9](preview/settingpage.png "Preview")
+![preview 5](preview/profilepage.png "Preview")
 
 
 ## For Gitea Version ***1.11.0***

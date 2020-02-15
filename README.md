@@ -4,22 +4,16 @@
 
 ![preview 1](preview/homepage.png "Preview")
 
-![preview 2](preview/explore.png "Preview")
+![preview 2](preview/signedhomepage.png "Preview")
 
-![preview 3](preview/login.png "Preview")
+![preview 3](preview/repopage1.png "Preview")
 
-![preview 4](preview/signedhomepage.png "Preview")
+![preview 4](preview/markdown.png "Preview")
 
-![preview 5](preview/repopage.png "Preview")
-
-![preview 6](preview/markdowneditor.png "Preview")
-
-![preview 7](preview/profilepage.png "Preview")
-
-![preview 8](preview/settingpage.png "Preview")
+![preview 5](preview/profilepage.png "Preview")
 
 
-## For Gitea Version ***1.10.3***
+## For Gitea Version ***1.11.0***
 
 ## How to use:
 1. Find your gitea custom directory path in ***Site Administration > Configuration > Custom File Root Path***.

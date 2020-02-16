@@ -1,9 +1,17 @@
 # Gitea Matrix Template- Turn your gitea arc-green template into the matrix
+
 ## Previews:
 
-![preview 1](matrix-preview.png "Preview")
+![preview 1](preview/homepage.png "Preview")
 
-![preview 2](matrix-preview-2.png "Preview")
+![preview 2](preview/signedhomepage.png "Preview")
+
+![preview 3](preview/repopage1.png "Preview")
+
+![preview 4](preview/markdown.png "Preview")
+
+![preview 5](preview/profilepage.png "Preview")
+
 
 ## For Gitea Version ***1.11.x***
 
@@ -21,10 +29,8 @@ DEFAULT_THEME = matrix
 ### Welcome to the matrix!
 
 ### Special Notes:
- - A user can still change the theme settings. 
+ - A user can still change the theme settings.
 
-### Special Thanks to 6543!
+### Special Thanks to 6543 & FanyangMengDev
 https://github.com/6543
-
-
- 
+https://github.com/FanyangMengDev

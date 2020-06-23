@@ -6,11 +6,11 @@
 	<div class="ui stackable middle very relaxed page grid">
 		<div class="sixteen wide center aligned centered column">
 			<div>
-				<i class="octicon octicon-flame gitea-matrix-primary-color" style="font-size:180px;"></i>
+				<img class="logo" src="{{StaticUrlPrefix}}/img/gitea-lg.png" />
 			</div>
 			<div class="hero">
 				<h1 class="ui icon header title">
-					<span class="gitea-matrix-primary-color">{{AppName}}</span>
+					{{AppName}}
 				</h1>
 				<h2>{{.i18n.Tr "startpage.app_desc"}}</h2>
 			</div>
@@ -19,7 +19,7 @@
 	<div class="ui stackable middle very relaxed page grid">
 		<div class="eight wide center column">
 			<h1 class="hero ui icon header">
-				<i class="octicon octicon-flame"></i> {{.i18n.Tr "startpage.install"}}
+				{{svg "octicon-flame" 16}} {{.i18n.Tr "startpage.install"}}
 			</h1>
 			<p class="large">
 				{{.i18n.Tr "startpage.install_desc" | Str2html}}
@@ -27,7 +27,7 @@
 		</div>
 		<div class="eight wide center column">
 			<h1 class="hero ui icon header">
-				<i class="octicon octicon-device-desktop"></i> {{.i18n.Tr "startpage.platform"}}
+				{{svg "octicon-device-desktop" 16}} {{.i18n.Tr "startpage.platform"}}
 			</h1>
 			<p class="large">
 				{{.i18n.Tr "startpage.platform_desc" | Str2html}}
@@ -37,7 +37,7 @@
 	<div class="ui stackable middle very relaxed page grid">
 		<div class="eight wide center column">
 			<h1 class="hero ui icon header">
-				<i class="octicon octicon-rocket"></i> {{.i18n.Tr "startpage.lightweight"}}
+				{{svg "octicon-rocket" 16}} {{.i18n.Tr "startpage.lightweight"}}
 			</h1>
 			<p class="large">
 				{{.i18n.Tr "startpage.lightweight_desc" | Str2html}}
@@ -45,7 +45,7 @@
 		</div>
 		<div class="eight wide center column">
 			<h1 class="hero ui icon header">
-				<i class="octicon octicon-code"></i> {{.i18n.Tr "startpage.license"}}
+				{{svg "octicon-code" 16}} {{.i18n.Tr "startpage.license"}}
 			</h1>
 			<p class="large">
 				{{.i18n.Tr "startpage.license_desc" | Str2html}}

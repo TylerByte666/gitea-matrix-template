@@ -2,8 +2,12 @@
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 //Get client offsets
-var my_height = document.getElementById("main_doc").offsetHeight;
-var my_width = document.getElementById("home").offsetWidth;
+var my_height = "innerHeight" in window
+               ? window.innerHeight
+               : document.documentElement.offsetHeight; ;
+var my_width = "innerWidth" in window
+               ? window.innerWidth
+               : document.documentElement.offsetWidth; ;
 
 //making the canvas full screen
 c.height = my_height;

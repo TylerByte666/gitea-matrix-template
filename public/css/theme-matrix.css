@@ -981,3 +981,19 @@ footer {
   position: relative;
   margin-bottom: 0px
 }
+
+.ui.avatar {
+  border-color: #5AA509 !important;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.ui.attached {
+  background: black !important;
+}
+
+.badge {
+  background: black !important;
+  border-color: #5AA509 !important;
+  border-style: solid;
+}

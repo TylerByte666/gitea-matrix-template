@@ -13,7 +13,7 @@
 ![preview 5](preview/profilepage.png "Preview")
 
 
-## For Gitea Version ***1.12.0-dev***
+## For Gitea Version ***1.12.x***
 
 ## How to use:
 1. Find your gitea custom directory path in ***Site Administration > Configuration > Custom File Root Path***.

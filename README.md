@@ -31,6 +31,6 @@ DEFAULT_THEME = matrix
 ### Special Notes:
  - A user can still change the theme settings.
 
-### Special Thanks to 6543 & FanyangMengDev
+### Special Thanks to 6543 & MFYDev
 https://github.com/6543
-https://github.com/FanyangMengDev
+https://github.com/MFYDev
